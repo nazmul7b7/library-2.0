@@ -16,8 +16,7 @@ Display.prototype.add = function (book) {
   const uiString = `<tr>                    
                     <td data-label="Name">${book.name}</td>
                     <td data-label="Author">${book.author}</td>
-                    <td data-label="Pages">${book.pages}</td>
-                    <td><button class="delete">Delete</button></td>
+                    <td data-label="Pages">${book.pages}</td>                    
                   </tr>`;
   tableBody.innerHTML += uiString;
 };
