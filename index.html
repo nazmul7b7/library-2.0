@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+    <!-- link -->
+
+    <title>Library</title>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav>
+      <label class="logo">Library</label>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Alert Msg -->
+    <div id="msg"></div>
+
+    <!-- Heading -->
+    <div class="header">
+      <h1>Library</h1>
+      <hr />
+    </div>
+
+    <!-- Form -->
+    <form id="libraryForm">
+      <div>
+        <label for="bookName">Name:</label>
+        <input type="text" name="bookName" id="bookName" autocomplete="off" />
+      </div>
+      <div>
+        <label for="authorName">Author:</label>
+        <input type="text" name="authorName" id="authorName" autocomplete="off" />
+      </div>
+      <div>
+        <label for="pages">Pages:</label>
+        <input type="number" name="pages" id="pages" />
+      </div>
+      <div>
+        <button type="submit">Add Book</button>
+      </div>
+    </form>
+    <hr />
+
+    <!-- Table -->
+    <h2>Your Books</h2>
+    <table class="table">
+      <thead>
+        <th>Name</th>
+        <th>Author</th>
+        <th>Pages</th>
+      </thead>
+      <tbody id="tableBody">
+        <tr>
+          <td data-label="Name">Book1</td>
+          <td data-label="Author">Author1</td>
+          <td data-label="Pages">200</td>
+        </tr>
+        <tr>
+          <td data-label="Name">Book2</td>
+          <td data-label="Author">Author2</td>
+          <td data-label="Pages">230</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
